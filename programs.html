@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <h2>OMI</h2>
+      <nav>
+        <a href="Index.html"><img src="images/logo1.jpg" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <!-- Close Icon (shows on mobile only) -->
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="programs.html">PROGRAMS</a></li>
+            <li><a href="events.html">EVENTS-BLOGS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    <!-- Intro -->
+    <section class="tag-line">
+      <div class="soft-space">
+        <h1>Adulting is hard.</h1>
+        <p>Bestie makes it softer.</p>
+      </div>
+    </section>
+
+    <section class="programs-intro">
+      <h1>Our Programs</h1>
+      <p>
+        Gentle paths to healing, growth, and joyful connection through nature,
+        play, and people.
+      </p>
+    </section>
+
+    <!-- Programs Accordion -->
+    <div class="accordion-item">
+      <div class="accordion-header">1. Bestie Wellness Program</div>
+      <div class="accordion-content">
+        <h3>Hit Pause. Play. Reconnect.</h3>
+        <p>
+          Life moves fast. Bestie invites you to slow down, breathe, and
+          rediscover joy through playful connection and calm reflection — all in
+          nature’s embrace.
+        </p>
+        <ul>
+          <li>✨ Gentle physical activities</li>
+          <li>🧒 Nostalgic childhood games</li>
+          <li>🧘 Guided reflection sessions</li>
+          <li>🎵 Nature-inspired music</li>
+          <li>🤝 Meaningful social connections</li>
+        </ul>
+        <a href="registration.html" class="btn">Join Bestie</a>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">2. Family Exchange Experience</div>
+      <div class="accordion-content">
+        <h3>Step Into Another World, Together</h3>
+        <p>
+          A heartwarming exchange program where families from rural and urban
+          areas swap experiences, fostering empathy, shared values, and fresh
+          perspective.
+        </p>
+        <ul>
+          <li>🏡 Rural-Urban Exchange</li>
+          <li>🌆 Urban-Rural Exchange</li>
+        </ul>
+        <a href="registration.html" class="btn">Join Exchange</a>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">3. Ecotherapy Program</div>
+      <div class="accordion-content">
+        <h3>Let Nature Do the Healing</h3>
+        <p>
+          Rediscover calm through outdoor adventures that awaken your senses and
+          bring peace back into your life.
+        </p>
+        <ul>
+          <li>🚗 Road trips</li>
+          <li>🥾 Nature hikes</li>
+          <li>🐦 Birdwatching</li>
+          <li>🦓 Mini safaris</li>
+        </ul>
+        <a href="registration.html" class="btn">Explore Nature</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Building Connections, Empowering Futures.</p>
+      <p>© 2025 Ubrutech Ltd. All Rights Reserved.</p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-TikTok"></i>
+      </div>
+    </section>
+    <!--Javascript for togle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0"; // slide in
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px"; // slide out
+      }
+    </script>
+    <!-- JS for accordion -->
+    <script>
+      const headers = document.querySelectorAll(".accordion-header");
+      headers.forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          content.style.display =
+            content.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
+  </body>
+</html>

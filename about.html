@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <h2>OMI</h2>
+      <nav>
+        <a href="Index.html"><img src="images/logo1.jpg" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <!-- Close Icon (shows on mobile only) -->
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="programs.html">PROGRAMS</a></li>
+            <li><a href="events.html">EVENTS-BLOGS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!--about content-->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>OMI Wellness Program</h1>
+          <p>
+            At OMI, we help people feel whole again by creating moments of
+            stillness, joy, and connection that restore clarity, resilience, and
+            a sense of purpose. Our mission is to support individuals navigating
+            high-pressure environments by offering one-day, peaceful outdoor
+            experiences designed to nurture calm, reflection, play, and
+            self-awareness in serene, alcohol-free settings.
+          </p>
+          <a href="programs.html" class="hero-btn red-btn">EXPLORE MORE</a>
+        </div>
+        <div class="about-col">
+          <img src="images/yog.jpg" alt="OMI experience" />
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Building Connections, Empowering Futures.</p>
+      <p>© 2025 Ubrutech Ltd. All Rights Reserved.</p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </section>
+
+    <!--Javascript for toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0"; // slide in
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px"; // slide out
+      }
+    </script>
+  </body>
+</html>
